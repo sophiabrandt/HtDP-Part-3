@@ -62,7 +62,7 @@
 
 (define (square-roots lon) (map2 sqrt lon))
 
-
+;; (X -> Y) (listof X) -> (listof Y)
 ;; given fn and (list n0 n1 ...) produce (list (fn n0) (fn n1) ...)
 (check-expect (map2 sqr empty) empty) 
 (check-expect (map2 sqr (list 2 4)) (list 4 16))
